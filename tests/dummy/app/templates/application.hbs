@@ -1,3 +1,18 @@
 <h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+{{ff-checkbox
+  on-change=(action (mut checked))
+  on-indeterminate-change=(action (mut indeterminate))
+  checked=checked
+  indeterminate=indeterminate
+}}
+
+<div>
+  <button {{action "toggleChecked"}}>Toggle Checked</button>
+  Checked: {{checked}}
+</div>
+
+<div>
+  <button {{action "toggleIndeterminate"}}>Toggle Indeterminate</button>
+  Indeterminate: {{indeterminate}}
+</div>
