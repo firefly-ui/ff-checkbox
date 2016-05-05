@@ -1,6 +1,6 @@
 {
   "name": "ff-checkbox",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Theme-able checkbox component for Ember 2.0! Supports Foundation and Bootstrap, part of Firefly UI",
   "directories": {
     "doc": "doc",
@@ -36,7 +36,8 @@
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "ember-try": "^0.2.2",
-    "loader.js": "^4.0.1"
+    "loader.js": "^4.0.1",
+    "phantomjs": "^2.1.7"
   },
   "keywords": [
     "ember-addon"
