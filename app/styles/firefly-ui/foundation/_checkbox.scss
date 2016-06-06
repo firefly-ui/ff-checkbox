@@ -83,17 +83,16 @@ $checkbox-focus-border-color: rgba(0,0,0,0.3) !default;
         background-color: $checkbox-checked-background-color;
 
         &::after {
-          top: 4px;
-          left: 2.4px;
+          top: 0;
+          left: 0;
           height: 7px;
           width: 12px;
 
-          transform: rotate(-45deg) skew(0,1deg);
+          transform: translateX(2.4px) translateY(4px) rotate(-45deg) skew(0, 1deg);
 
           border-bottom: solid 2px;
           border-left: solid 2px;
           border-color: $checkbox-checked-color;
-
         }
       }
     }
@@ -104,12 +103,12 @@ $checkbox-focus-border-color: rgba(0,0,0,0.3) !default;
         background-color: $checkbox-indeterminate-background-color;
 
         &::after {
-          top: 7.75px;
+          top: 8px;
           left: 3px;
           width: 11px;
+          height: 2px;
 
-          border-bottom: solid 1.5px;
-          border-color: $checkbox-indeterminate-color;
+          background-color: $checkbox-indeterminate-color;
         }
       }
     }
